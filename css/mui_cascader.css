@@ -1,0 +1,29 @@
+/*无限级联css*/
+#mcascader {
+  height: 55vh;
+  overflow-y: scroll;
+}
+
+#popover .label {
+  line-height: 2rem;
+  padding-left: 10px;
+  text-align: center;
+  font-size: 0.9rem;
+}
+#goback {
+  border: none;
+  display: none;
+  padding: 0 10px;
+  font-size: 1.1rem;
+  position: absolute;
+  left: 0.3rem;
+  top: 0.2rem;
+}
+
+.mui-popover .mui-table-view {
+  max-height: 100%;
+}
+#noData {
+  text-align: center;
+  margin-top: 2rem;
+}
