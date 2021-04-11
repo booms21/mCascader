@@ -23,7 +23,7 @@ mCascader 是一个移动端气泡级联框
           console.log(data)
         }
       });
-      ```
+   ```
       input:
       对应文本框的选择器。字符串类型
       
