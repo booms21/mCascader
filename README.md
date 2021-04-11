@@ -11,8 +11,36 @@ mCascader 是一个移动端气泡级联框
     />
     <link href="css/mui_cascader.css" rel="stylesheet" />
 ```
+## 使用方法：
+直接调用mCascader方法，并传入配置项：
 
-
+   ```
+    mCascader({
+        input:'#demo', //对应input的id
+        data:json, //mCascader 的数据
+        separator:'/', //input中的分隔符
+        onClick:function(data){ //当选择完成时的回调函数
+          console.log(data)
+        }
+      });
+      ```
+      input:
+      对应文本框的选择器。字符串类型
+      
+      data:
+      mCascader的数据。Array类型，树结构，data中的节点必须要有以下属性：
+      data = [{
+      id:'',  // 必须,唯一的id值，String类型
+      name:'', //必须,对应mCascader节点的显示文本 ，String类型
+      children:[...] //子节点 ，Array类型
+      },...]
+      
+      
+      mCascader.back()
+      返回上一层级
+      
+      mCascader.clear();
+      清空mCascader数据及重置界面
 ## 例子：
 ```
       <div id="popover" class="mui-popover">
