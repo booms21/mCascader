@@ -10,6 +10,7 @@ mCascader 是一个移动端气泡级联框
       rel="stylesheet"
     />
     <link href="css/mui_cascader.css" rel="stylesheet" />
+     <script src="js/mui_cascader.js"></script>
 ```
 ## 使用方法：
 直接调用mCascader方法，并传入配置项：
@@ -72,7 +73,7 @@ mCascader 是一个移动端气泡级联框
         />
       </div>
 
-
+ <script src="js/mui_cascader.js"></script>
     <script>
       var json = [
         {
