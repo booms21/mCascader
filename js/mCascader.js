@@ -35,7 +35,8 @@
         item.name +
         "</a></li>";
     });
-    $(".mui-table-view").unbind().empty().html(dom).show();
+
+    $(".mui-table-view").empty().html(dom).show();
   }
 
   //返回上一级
@@ -50,16 +51,19 @@
     mCascader.options = options;
     let $input = $(selector);
     $input.click(function () {
+      
       //当input点击则默认渲染第一层
       treeHistoryArr = [];
       currtTreeArr = data;
       renderTree(data, 0);
+ 
       treeHistoryArr.push(currtTreeArr); //放入历史
 
       mui("#popover").popover("show", $(selector)[0]);
 
       //事件代理列表项的点击
-      $("#mcascader").on("click", ".mui-navigate-right", function () {
+      $("#mcascader").off().on("click", ".mui-navigate-right", function () {
+        
         let idx = $(this).attr("index");
         if (currtTreeArr[idx].id !== $input.data("id")) {
           let levelName = $input.val().split(separator);
@@ -92,7 +96,7 @@
     treeHistoryArr = [];
     currtTreeArr = [];
     $(this.options.input).data("id", "").val("");
-    $("#mcascader").unbind();
+
     $(".mui-table-view").empty();
     mui("#popover").popover("hide");
   };

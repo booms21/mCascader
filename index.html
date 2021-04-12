@@ -15,7 +15,7 @@
       href="https://cdn.bootcdn.net/ajax/libs/mui/3.7.1/css/mui.min.css"
       rel="stylesheet"
     />
-    <link href="css/mui_cascader.css" rel="stylesheet" />
+    <link href="css/mCascader.css" rel="stylesheet" />
   </head>
   <body>
     <div id="popover" class="mui-popover">
@@ -38,16 +38,10 @@
     <div class="mui-input-row">
       <div class="label"><a href="#popover"></a>节点：</div>
 
-      <input
-        type="text"
-        id="demo"
-        data-id=""
-        placeholder="请选择"
-        readonly
-      />
+      <input type="text" id="demo" data-id="" placeholder="请选择" readonly />
     </div>
   </body>
-    <script src="js/mui_cascader.js"></script>
+  <script src="js/mCascader.js"></script>
   <script>
     var json = [
       {
@@ -60,16 +54,23 @@
           { name: "节点244", id: "1-4", children: [] },
         ],
       },
-      { name: "节点2", id: "2", children: [ { name: "节点24411111", id: "2-4", children: [] }, { name: "节点55555", id: "2-4", children: [] }] },
+      {
+        name: "节点2",
+        id: "2",
+        children: [
+          { name: "节点24411111", id: "2-4", children: [] },
+          { name: "节点55555", id: "2-7", children: [] },
+        ],
+      },
     ]; //存储过滤的值
     mCascader({
-      input:'#demo',
-      data:json,
-      separator:'/',
-      onClick:function(data){
-        console.log(data)
-      }
+      input: "#demo", //对应input的id
+      data: json, //mCascader 的数据
+      separator: "/", //input中的分隔符
+      onClick: function (node) {
+        //当选择完成时的回调函数
+        console.log(node);
+      },
     });
   </script>
-
 </html>
