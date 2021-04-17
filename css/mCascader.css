@@ -4,11 +4,11 @@
   overflow-y: scroll;
 }
 
-#popover .label {
+#mcascaderPopover .label {
   line-height: 2rem;
   padding-left: 10px;
   text-align: center;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
 }
 #goback {
   border: none;
@@ -26,4 +26,7 @@
 #noData {
   text-align: center;
   margin-top: 2rem;
+}
+#mcascader .active,#mcascader .active > .mui-navigate-right:after {
+  color: #007aff;
 }

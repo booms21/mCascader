@@ -18,7 +18,7 @@
     <link href="css/mCascader.css" rel="stylesheet" />
   </head>
   <body>
-    <div id="popover" class="mui-popover">
+    <div id="mcascaderPopover" class="mui-popover">
       <div class="label">
         <button
           type="button"
@@ -36,9 +36,9 @@
     </div>
 
     <div class="mui-input-row">
-      <div class="label"><a href="#popover"></a>节点：</div>
+      <div class="label"><a href="#mcascaderPopover"></a>节点：</div>
 
-      <input type="text" id="demo" data-id="" placeholder="请选择" readonly />
+      <input type="text" id="demo"  placeholder="请选择" readonly />
     </div>
   </body>
   <script src="js/mCascader.js"></script>
@@ -49,7 +49,14 @@
         id: "1",
         children: [
           { name: "节点11", id: "1-1", children: [] },
-          { name: "节点12", id: "1-2", children: [] },
+          {
+            name: "节点12",
+            id: "1-2",
+            children: [
+              { name: "节点122221", id: "1-2-1", children: [] },
+              { name: "节点12222222", id: "1-2-2", children: [] },
+            ],
+          },
           { name: "节点123", id: "1-3", children: [] },
           { name: "节点244", id: "1-4", children: [] },
         ],
@@ -66,6 +73,7 @@
     mCascader({
       input: "#demo", //对应input的id
       data: json, //mCascader 的数据
+      value: ["1-2-2"],
       separator: "/", //input中的分隔符
       onClick: function (node) {
         //当选择完成时的回调函数
