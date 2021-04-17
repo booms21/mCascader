@@ -1,8 +1,8 @@
 # mCascader
 
-mCascader 是一个mui风格的移动端气泡级联框，支持可选择任意层级、默认值、分隔符
+mCascader 是一款mui风格的移动端气泡级联框，支持可选择任意层级、默认值、分隔符
 
-引入mui和jq库，及mui_cascader.css（cascader的样式）
+首先引入mui和jq库，及mui_cascader.css（cascader的样式）
 ```
  <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdn.bootcdn.net/ajax/libs/mui/3.7.1/js/mui.min.js"></script>
@@ -27,23 +27,23 @@ mCascader 是一个mui风格的移动端气泡级联框，支持可选择任意�
         }
       });
    ```
-      input:
-      对应文本框的选择器。字符串类型
+input：
+对应文本框的选择器，字符串类型
       
-      data:
-      mCascader的数据。Array类型，树结构，data中的节点必须要有以下属性：
-      data = [{
-      id:'',  // 必须,唯一的id值，String类型
-      name:'', //必须,对应mCascader节点的显示文本 ，String类型
-      children:[...] //子节点 ，Array类型
-      },...]
+data：
+mCascader的数据。Array类型，树结构，data中的节点必须要有以下属性：
+ data = [{
+   id:'',  // 必须,唯一的id值，String类型
+   name:'', //必须,对应mCascader节点的显示文本 ，String类型
+   children:[...] //子节点 ，Array类型
+    },...]
       
+返回上一层级：
+mCascader.back()
       
-      mCascader.back()
-      返回上一层级
-      
-      mCascader.clear();
-      清空mCascader数据及重置界面
+清空mCascader数据及重置界面：
+mCascader.clear()
+     
 ## 例子：
 ```
     <div id="mcascaderPopover" class="mui-popover">
@@ -109,3 +109,6 @@ mCascader 是一个mui风格的移动端气泡级联框，支持可选择任意�
     });
   </script>
 ```
+
+
+欢迎你参与贡献！👏
