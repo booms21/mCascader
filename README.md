@@ -27,24 +27,41 @@ mCascader 是一款mui风格的移动端气泡级联框，支持可选择任意�
         }
       });
    ```
+
 input：
+
+
 对应文本框的选择器，字符串类型
-      
+
+
 data：
+
+
 mCascader的数据。Array类型，树结构，data中的节点必须要有以下属性：
+
+```
  data = [{
    id:'',  // 必须,唯一的id值，String类型
    name:'', //必须,对应mCascader节点的显示文本 ，String类型
    children:[...] //子节点 ，Array类型
     },...]
-      
+```
+
+
 返回上一层级：
+
+
 mCascader.back()
       
+      
 清空mCascader数据及重置界面：
+
+
 mCascader.clear()
      
+     
 ## 例子：
+##### mcascader的DOM不写死到js中，保留了原本组件的结构，方便你自定义组件的样式
 ```
     <div id="mcascaderPopover" class="mui-popover">
       <div class="label">
