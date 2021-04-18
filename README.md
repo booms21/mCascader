@@ -1,6 +1,7 @@
 # mCascader
 
 mCascader 是一款mui风格的移动端气泡级联框，支持可选择任意层级、默认值、分隔符
+![image](https://user-images.githubusercontent.com/36625154/115132367-1f5e1300-a032-11eb-8d79-89bbb38e08f8.png)
 
 首先引入mui和jq库，及mui_cascader.css（cascader的样式）
 ```
