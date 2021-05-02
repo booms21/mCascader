@@ -7,7 +7,7 @@ mCascader 是一款mui风格的移动端h5气泡级联框，支持可选择任�
 
 
 首先引入mui和jq库，mCascader.css（cascader的样式）
-```
+```html
  <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdn.bootcdn.net/ajax/libs/mui/3.7.1/js/mui.min.js"></script>
     <link
