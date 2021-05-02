@@ -20,7 +20,7 @@ mCascader 是一款mui风格的移动端h5气泡级联框，支持可选择任�
 ## 使用方法：
 直接调用mCascader方法，并传入配置项：
 
-   ```
+   ```javascript
     mCascader({
         input:'#demo', //对应input的id
         data:data, //mCascader 的数据
@@ -73,7 +73,7 @@ mCascader.clear()
 
 ## 例子：
 ##### mcascader的DOM不写死到js中，保留了原本组件的结构，方便你自定义组件的样式
-```
+``` html
     <div id="mcascaderPopover" class="mui-popover">
       <div class="label">
         <button
