@@ -2,9 +2,11 @@
 
 mCascader 是一款mui风格的移动端h5气泡级联框，支持可选择任意层级、默认值、分隔符
 
-![image](https://user-images.githubusercontent.com/36625154/115132367-1f5e1300-a032-11eb-8d79-89bbb38e08f8.png)
+
+<img width="300" alt="mCascader效果" src="https://user-images.githubusercontent.com/36625154/115132367-1f5e1300-a032-11eb-8d79-89bbb38e08f8.png">
 
 
+## 使用方法：
 
 首先引入mui和jq库，mCascader.css（cascader的样式）
 ```html
@@ -17,7 +19,8 @@ mCascader 是一款mui风格的移动端h5气泡级联框，支持可选择任�
     <link href="css/mCascader.css" rel="stylesheet" />
      <script src="js/mCascader.js"></script>
 ```
-## 使用方法：
+
+
 直接调用mCascader方法，并传入配置项：
 
    ```javascript
